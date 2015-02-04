@@ -15,6 +15,7 @@
 		086DF8351A826632007BF2F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 086DF8341A826632007BF2F0 /* Images.xcassets */; };
 		086DF8381A826632007BF2F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086DF8361A826632007BF2F0 /* LaunchScreen.xib */; };
 		086DF8441A826632007BF2F0 /* WMFirstAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 086DF8431A826632007BF2F0 /* WMFirstAppTests.m */; };
+		086DF84F1A82669E007BF2F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 086DF8511A82669E007BF2F0 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		086DF83D1A826632007BF2F0 /* WMFirstAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WMFirstAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		086DF8421A826632007BF2F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		086DF8431A826632007BF2F0 /* WMFirstAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMFirstAppTests.m; sourceTree = "<group>"; };
+		086DF8501A82669E007BF2F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		086DF8521A8266BD007BF2F0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 			children = (
 				086DF8251A826632007BF2F0 /* Info.plist */,
 				086DF8261A826632007BF2F0 /* main.m */,
+				086DF8511A82669E007BF2F0 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -185,6 +189,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 086DF8181A826632007BF2F0;
 			productRefGroup = 086DF8221A826632007BF2F0 /* Products */;
@@ -203,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				086DF8331A826632007BF2F0 /* Main.storyboard in Resources */,
+				086DF84F1A82669E007BF2F0 /* Localizable.strings in Resources */,
 				086DF8381A826632007BF2F0 /* LaunchScreen.xib in Resources */,
 				086DF8351A826632007BF2F0 /* Images.xcassets in Resources */,
 			);
@@ -262,6 +268,15 @@
 				086DF8371A826632007BF2F0 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		086DF8511A82669E007BF2F0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				086DF8501A82669E007BF2F0 /* Base */,
+				086DF8521A8266BD007BF2F0 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

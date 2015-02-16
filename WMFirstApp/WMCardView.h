@@ -11,19 +11,16 @@
 @protocol WMCardViewDatasource <NSObject>
 
 @required
-
-- (NSString*)cardViewCardType;
-- (UIColor*)cardViewCardColor;
-- (NSString*)cardViewCardNumber;
-
-
+- (NSString*)cardViewCardType:(NSInteger)cardViewTag;
+- (UIColor*)cardViewCardColor:(NSInteger)cardViewTag;
+- (NSString*)cardViewCardNumber:(NSInteger)cardViewTag;
 
 @end
 
 @protocol WMCardViewDelegate <NSObject>
 
 @required
-- (void)cardViewRotate;
+- (void)cardViewRotateTag:(NSInteger)cardViewTag;
 
 @end
 
@@ -32,9 +29,9 @@
 @property (weak, nonatomic) id<WMCardViewDatasource> datasource;
 @property (weak, nonatomic) id<WMCardViewDelegate> delegate;
 
-@property (nonatomic) NSInteger cardViewTag;
-
 //+ (id)sharedInstance;
+
+@property (nonatomic) NSInteger cardViewNumber;
 
 - (void)getNewCardView;
 

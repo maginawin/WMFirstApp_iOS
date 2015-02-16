@@ -112,6 +112,9 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="cardView" destination="eYG-LR-M1m" id="zB2-OS-G1y"/>
+                        <outlet property="cardView1" destination="Fbz-G3-Rnl" id="K0D-gC-gCT"/>
+                        <outlet property="cardView2" destination="mcZ-PQ-JCc" id="aTc-rY-xU8"/>
+                        <outlet property="cardView3" destination="SpD-qo-KAV" id="MYP-re-7e8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mfi-2y-J6q" userLabel="First Responder" sceneMemberID="firstResponder"/>

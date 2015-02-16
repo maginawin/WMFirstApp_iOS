@@ -8,10 +8,34 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol WMCardViewDatasource <NSObject>
+
+@required
+
+- (NSString*)cardViewCardType;
+- (UIColor*)cardViewCardColor;
+- (NSString*)cardViewCardNumber;
+
+
+
+@end
+
+@protocol WMCardViewDelegate <NSObject>
+
+@required
+- (void)cardViewRotate;
+
+@end
+
 @interface WMCardView : UIView
+
+@property (weak, nonatomic) id<WMCardViewDatasource> datasource;
+@property (weak, nonatomic) id<WMCardViewDelegate> delegate;
+
+@property (nonatomic) NSInteger cardViewTag;
 
 //+ (id)sharedInstance;
 
-- (void)getWithCardType:(NSString*)cardType cardColor:(UIColor*)cardColor cardNumber:(NSInteger)cardNumber;
+- (void)getNewCardView;
 
 @end

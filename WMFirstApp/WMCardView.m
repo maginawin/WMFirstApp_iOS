@@ -28,6 +28,7 @@ static id sharedInstance;
     self = [super initWithCoder:aDecoder];
     if (self) {
         [self addBorder];
+        [self addCardViewLabel];
     }
     return self;
 }
@@ -36,6 +37,7 @@ static id sharedInstance;
     self = [super initWithFrame:frame];
     if (self) {
         [self addBorder];
+        [self addCardViewLabel];
     }
     return self;
 }
@@ -47,11 +49,9 @@ static id sharedInstance;
 //    return sharedInstance;
 //}
 
-- (void)getWithCardType:(NSString *)cardType cardColor:(UIColor*)cardColor cardNumber:(NSInteger)cardNumber {
-    [self addCardTypeLabel:cardType cardColor:cardColor AndCardNumberLabel:cardNumber];
+- (void)getNewCardView {
+    
 }
-
-
 
 #pragma mark - Tools
 
@@ -62,36 +62,14 @@ static id sharedInstance;
     self.layer.borderWidth = 1;
 }
 
-- (void)handleCardClick:(id)sender {
-    NSLog(@"click");
-    _isShow = !_isShow;
-    [self rotateClick:_isShow];
-}
-
-- (void)rotateClick:(BOOL)isShow {
-    CATransition* transition = [CATransition animation];
-    transition.duration = 0.6;
-    transition.type = @"oglFlip";
-    transition.subtype = kCATransitionFromLeft;
-    if (_isShow) {
-        _backgroudView.hidden = YES;
-    } else {
-        _backgroudView.hidden = NO;
-    }
-    [self.layer addAnimation:transition forKey:nil];
-}
-
-- (void)addCardTypeLabel:(NSString*)cardType cardColor:(UIColor*)cardColor AndCardNumberLabel:(NSInteger)cardNumber {
-    if (!_cardTypeLabel) {
+- (void)addCardViewLabel {
+//    if (!_cardTypeLabel) {
         _cardTypeLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, SELF_WIDTH, SELF_HEIGHT / 2)];
         _cardTypeLabel.textAlignment = NSTextAlignmentCenter;
         _cardTypeLabel.font = [UIFont systemFontOfSize:32];
         [self addSubview:_cardTypeLabel];
-    }
-    _cardTypeLabel.text = cardType;
-    _cardTypeLabel.textColor = cardColor;
-    
-    if (!_cardNumberLabel) {
+//    }
+//    if (!_cardNumberLabel) {
         _cardNumberLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, SELF_HEIGHT / 2, SELF_WIDTH, SELF_HEIGHT / 2)];
         _cardNumberLabel.textAlignment = NSTextAlignmentCenter;
         _cardNumberLabel.textColor = [UIColor darkTextColor];
@@ -106,9 +84,38 @@ static id sharedInstance;
         _cardButton.backgroundColor = [UIColor clearColor];
         [_cardButton addTarget:self action:@selector(handleCardClick:) forControlEvents:UIControlEventTouchUpInside];
         _isShow = NO;
-        [self addSubview:_cardButton];
+    [self addSubview:_cardButton];
+    self.cardViewTag = 1;
+//    }
+}
+
+- (void)handleCardClick:(id)sender {
+     NSLog(@"click");
+    _isShow = !_isShow;
+    [self rotateClick:_isShow];
+}
+
+- (void)rotateClick:(BOOL)isShow {
+    CATransition* transition = [CATransition animation];
+    transition.duration = 0.6;
+    transition.type = @"oglFlip";
+    transition.subtype = kCATransitionFromLeft;
+    if (_isShow) {
+        [_delegate cardViewRotate];
+        [self addCardTypeLabel:[_datasource cardViewCardType] cardColor:[_datasource cardViewCardColor] AndCardNumberLabel:[_datasource cardViewCardNumber]];
+        _backgroudView.hidden = YES;
+    } else {
+        _backgroudView.hidden = NO;
     }
-    _cardNumberLabel.text = [NSString stringWithFormat:@"%d", (int)cardNumber];
+    [self.layer addAnimation:transition forKey:nil];
+}
+
+- (void)addCardTypeLabel:(NSString*)cardType cardColor:(UIColor*)cardColor AndCardNumberLabel:(NSString*)cardNumber {
+    
+    _cardTypeLabel.text = cardType;
+    _cardTypeLabel.textColor = cardColor;
+    
+    _cardNumberLabel.text = cardNumber;
 }
 
 @end

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		082C314F1A91B78900308207 /* WMCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C314E1A91B78900308207 /* WMCardViewController.m */; };
 		082C31521A91B7B300308207 /* WMCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C31511A91B7B300308207 /* WMCardView.m */; };
+		082C31551A92233B00308207 /* WMCardObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C31541A92233B00308207 /* WMCardObject.m */; };
+		082C31581A92243400308207 /* WMCardArrayObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C31571A92243400308207 /* WMCardArrayObject.m */; };
 		086DF8271A826632007BF2F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 086DF8261A826632007BF2F0 /* main.m */; };
 		086DF82A1A826632007BF2F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 086DF8291A826632007BF2F0 /* AppDelegate.m */; };
 		086DF82D1A826632007BF2F0 /* WMFirstApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 086DF82B1A826632007BF2F0 /* WMFirstApp.xcdatamodeld */; };
@@ -35,6 +37,10 @@
 		082C314E1A91B78900308207 /* WMCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMCardViewController.m; sourceTree = "<group>"; };
 		082C31501A91B7B300308207 /* WMCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMCardView.h; sourceTree = "<group>"; };
 		082C31511A91B7B300308207 /* WMCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMCardView.m; sourceTree = "<group>"; };
+		082C31531A92233B00308207 /* WMCardObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMCardObject.h; sourceTree = "<group>"; };
+		082C31541A92233B00308207 /* WMCardObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMCardObject.m; sourceTree = "<group>"; };
+		082C31561A92243400308207 /* WMCardArrayObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMCardArrayObject.h; sourceTree = "<group>"; };
+		082C31571A92243400308207 /* WMCardArrayObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMCardArrayObject.m; sourceTree = "<group>"; };
 		086DF8211A826632007BF2F0 /* WMFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		086DF8251A826632007BF2F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		086DF8261A826632007BF2F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +84,10 @@
 				082C314E1A91B78900308207 /* WMCardViewController.m */,
 				082C31501A91B7B300308207 /* WMCardView.h */,
 				082C31511A91B7B300308207 /* WMCardView.m */,
+				082C31531A92233B00308207 /* WMCardObject.h */,
+				082C31541A92233B00308207 /* WMCardObject.m */,
+				082C31561A92243400308207 /* WMCardArrayObject.h */,
+				082C31571A92243400308207 /* WMCardArrayObject.m */,
 			);
 			name = CardGame;
 			sourceTree = "<group>";
@@ -248,6 +258,8 @@
 			files = (
 				086DF82A1A826632007BF2F0 /* AppDelegate.m in Sources */,
 				086DF8271A826632007BF2F0 /* main.m in Sources */,
+				082C31581A92243400308207 /* WMCardArrayObject.m in Sources */,
+				082C31551A92233B00308207 /* WMCardObject.m in Sources */,
 				082C314F1A91B78900308207 /* WMCardViewController.m in Sources */,
 				086DF8301A826632007BF2F0 /* ViewController.m in Sources */,
 				082C31521A91B7B300308207 /* WMCardView.m in Sources */,

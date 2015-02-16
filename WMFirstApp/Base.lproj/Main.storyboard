@@ -65,18 +65,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYG-LR-M1m" customClass="WMCardView">
-                                <rect key="frame" x="80" y="120" width="160" height="240"/>
+                                <rect key="frame" x="28" y="20" width="60" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="yHH-yW-OJZ"/>
-                                    <constraint firstAttribute="height" constant="240" id="z4M-j9-b1r"/>
+                                    <constraint firstAttribute="width" constant="60" id="5pE-vM-S3y"/>
+                                    <constraint firstAttribute="height" constant="80" id="Asd-EI-Ms7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fbz-G3-Rnl" customClass="WMCardView">
+                                <rect key="frame" x="96" y="20" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="QyH-Bb-yBo"/>
+                                    <constraint firstAttribute="height" constant="80" id="tHY-2O-ess"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcZ-PQ-JCc" customClass="WMCardView">
+                                <rect key="frame" x="164" y="20" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="w2P-9A-8Hh"/>
+                                    <constraint firstAttribute="height" constant="80" id="xXr-8o-EpA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SpD-qo-KAV" customClass="WMCardView">
+                                <rect key="frame" x="232" y="20" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Tzo-H2-GVr"/>
+                                    <constraint firstAttribute="width" constant="60" id="YZy-6u-9sG"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="eYG-LR-M1m" secondAttribute="centerX" id="Sy8-al-pQg"/>
-                            <constraint firstAttribute="centerY" secondItem="eYG-LR-M1m" secondAttribute="centerY" id="h50-vv-iqN"/>
+                            <constraint firstItem="Fbz-G3-Rnl" firstAttribute="top" secondItem="DUr-7V-eRR" secondAttribute="bottom" id="OwA-we-jSp"/>
+                            <constraint firstAttribute="centerX" secondItem="SpD-qo-KAV" secondAttribute="centerX" constant="-102" id="Rx2-bo-AeZ"/>
+                            <constraint firstItem="mcZ-PQ-JCc" firstAttribute="top" secondItem="DUr-7V-eRR" secondAttribute="bottom" id="S5A-OA-EKw"/>
+                            <constraint firstAttribute="centerX" secondItem="Fbz-G3-Rnl" secondAttribute="centerX" constant="34" id="S5S-1Y-jRX"/>
+                            <constraint firstItem="eYG-LR-M1m" firstAttribute="top" secondItem="DUr-7V-eRR" secondAttribute="bottom" id="ZoO-K3-IOf"/>
+                            <constraint firstAttribute="centerX" secondItem="mcZ-PQ-JCc" secondAttribute="centerX" constant="-34" id="plq-VA-zrR"/>
+                            <constraint firstAttribute="centerX" secondItem="eYG-LR-M1m" secondAttribute="centerX" constant="102" id="uq1-7g-K4U"/>
+                            <constraint firstItem="SpD-qo-KAV" firstAttribute="top" secondItem="DUr-7V-eRR" secondAttribute="bottom" id="x0g-9c-5Bm"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>

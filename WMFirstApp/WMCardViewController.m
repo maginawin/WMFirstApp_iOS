@@ -11,6 +11,7 @@
 @interface WMCardViewController ()
 
 @property (weak, nonatomic) IBOutlet WMCardView *cardView;
+@property (strong, nonatomic) WMCardArrayObject* cardArray;
 
 @end
 
@@ -18,7 +19,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [_cardView getWithCardType:@"♥︎" cardColor:[UIColor redColor] cardNumber:8];
+    _cardView.datasource =  self;
+    _cardView.delegate = self;
+    _cardArray = [[WMCardArrayObject alloc] initWMCardArrayObject];
+
+    _cardView.cardViewTag = arc4random() % 54; // 取 0 ~ 53 之间的数
+}
+
+#pragma mark - Datasource
+
+- (NSString*)cardViewCardType{
+    return [[_cardArray.cardArray objectAtIndex:_cardView.cardViewTag] cardType];
+}
+
+- (UIColor*)cardViewCardColor {
+    return [[_cardArray.cardArray objectAtIndex:_cardView.cardViewTag] cardColor];
+}
+
+- (NSString*)cardViewCardNumber {
+    return [[_cardArray.cardArray objectAtIndex:_cardView.cardViewTag] cardNumber];
+}
+
+#pragma mark - Delegate
+
+- (void)cardViewRotate {
+    _cardView.cardViewTag = arc4random() % 54;
 }
 
 @end

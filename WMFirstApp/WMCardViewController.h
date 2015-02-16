@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "WMCardView.h"
+#import "WMCardArrayObject.h"
 
-@interface WMCardViewController : UIViewController
+@interface WMCardViewController : UIViewController <WMCardViewDatasource, WMCardViewDelegate>
 
 @end

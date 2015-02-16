@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		082C314F1A91B78900308207 /* WMCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C314E1A91B78900308207 /* WMCardViewController.m */; };
+		082C31521A91B7B300308207 /* WMCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C31511A91B7B300308207 /* WMCardView.m */; };
 		086DF8271A826632007BF2F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 086DF8261A826632007BF2F0 /* main.m */; };
 		086DF82A1A826632007BF2F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 086DF8291A826632007BF2F0 /* AppDelegate.m */; };
 		086DF82D1A826632007BF2F0 /* WMFirstApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 086DF82B1A826632007BF2F0 /* WMFirstApp.xcdatamodeld */; };
@@ -29,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		082C314D1A91B78900308207 /* WMCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMCardViewController.h; sourceTree = "<group>"; };
+		082C314E1A91B78900308207 /* WMCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMCardViewController.m; sourceTree = "<group>"; };
+		082C31501A91B7B300308207 /* WMCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMCardView.h; sourceTree = "<group>"; };
+		082C31511A91B7B300308207 /* WMCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMCardView.m; sourceTree = "<group>"; };
 		086DF8211A826632007BF2F0 /* WMFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		086DF8251A826632007BF2F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		086DF8261A826632007BF2F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -65,6 +71,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		082C314C1A91B75900308207 /* CardGame */ = {
+			isa = PBXGroup;
+			children = (
+				082C314D1A91B78900308207 /* WMCardViewController.h */,
+				082C314E1A91B78900308207 /* WMCardViewController.m */,
+				082C31501A91B7B300308207 /* WMCardView.h */,
+				082C31511A91B7B300308207 /* WMCardView.m */,
+			);
+			name = CardGame;
+			sourceTree = "<group>";
+		};
 		086DF8181A826632007BF2F0 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +103,7 @@
 		086DF8231A826632007BF2F0 /* WMFirstApp */ = {
 			isa = PBXGroup;
 			children = (
+				082C314C1A91B75900308207 /* CardGame */,
 				086DF8281A826632007BF2F0 /* AppDelegate.h */,
 				086DF8291A826632007BF2F0 /* AppDelegate.m */,
 				086DF82E1A826632007BF2F0 /* ViewController.h */,
@@ -230,7 +248,9 @@
 			files = (
 				086DF82A1A826632007BF2F0 /* AppDelegate.m in Sources */,
 				086DF8271A826632007BF2F0 /* main.m in Sources */,
+				082C314F1A91B78900308207 /* WMCardViewController.m in Sources */,
 				086DF8301A826632007BF2F0 /* ViewController.m in Sources */,
+				082C31521A91B7B300308207 /* WMCardView.m in Sources */,
 				086DF82D1A826632007BF2F0 /* WMFirstApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +453,7 @@
 				086DF8491A826632007BF2F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		086DF84A1A826632007BF2F0 /* Build configuration list for PBXNativeTarget "WMFirstAppTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +462,7 @@
 				086DF84C1A826632007BF2F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

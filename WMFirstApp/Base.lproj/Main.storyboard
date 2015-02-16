@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mwX-4h-I4L">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -31,6 +31,10 @@
                                     <action selector="menuClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ygQ-rV-9lz"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n8F-oY-FnU">
+                                <rect key="frame" x="120" y="200" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -40,11 +44,49 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="blueButton" destination="n8F-oY-FnU" id="dHV-cb-Zcf"/>
                         <outlet property="menuButton" destination="4tZ-Ug-beR" id="YgF-R7-aCH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="145" y="477"/>
+        </scene>
+        <!--Card View Controller-->
+        <scene sceneID="Z9K-7q-OBJ">
+            <objects>
+                <viewController id="mwX-4h-I4L" customClass="WMCardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DUr-7V-eRR"/>
+                        <viewControllerLayoutGuide type="bottom" id="vgc-wD-Kp1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EcE-Tr-Hmb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYG-LR-M1m" customClass="WMCardView">
+                                <rect key="frame" x="80" y="120" width="160" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="yHH-yW-OJZ"/>
+                                    <constraint firstAttribute="height" constant="240" id="z4M-j9-b1r"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="eYG-LR-M1m" secondAttribute="centerX" id="Sy8-al-pQg"/>
+                            <constraint firstAttribute="centerY" secondItem="eYG-LR-M1m" secondAttribute="centerY" id="h50-vv-iqN"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="cardView" destination="eYG-LR-M1m" id="zB2-OS-G1y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mfi-2y-J6q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="618" y="477"/>
         </scene>
     </scenes>
 </document>

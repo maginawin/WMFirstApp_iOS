@@ -53,6 +53,7 @@
     _historyScoreLabel.text = @"0";
     _scoreLabel.text = @"0";
     [CardObject shardInstance].delegate = self;
+    [[CardObject shardInstance] refreshCard];
     [self setupCardView];
 }
 

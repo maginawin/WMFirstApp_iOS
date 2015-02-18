@@ -1,56 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mwX-4h-I4L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yyb-2b-kS1">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="mqw-OD-Dz5">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="yyb-2b-kS1" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="D30-XX-OSq"/>
+                        <viewControllerLayoutGuide type="bottom" id="ngx-uQ-EnX"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="Se8-CD-Ppg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tZ-Ug-beR">
-                                <rect key="frame" x="16" y="428" width="44" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="7VJ-yf-Z2K"/>
-                                    <constraint firstAttribute="width" constant="44" id="Ubw-jD-Wcs"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="32"/>
-                                <state key="normal" title="✛">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="menuClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ygQ-rV-9lz"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n8F-oY-FnU">
-                                <rect key="frame" x="120" y="200" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NRy-2O-kTb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWc-Qf-tc2">
+                                        <rect key="frame" x="8" y="28" width="113" height="30"/>
+                                        <state key="normal" title="Turn Card Game">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="mwX-4h-I4L" kind="presentation" modalTransitionStyle="flipHorizontal" id="oop-16-E2W"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4tZ-Ug-beR" secondAttribute="bottom" constant="8" id="7aS-PM-Kjd"/>
-                            <constraint firstItem="4tZ-Ug-beR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="f5F-Dg-4Km"/>
+                            <constraint firstItem="NRy-2O-kTb" firstAttribute="leading" secondItem="Se8-CD-Ppg" secondAttribute="leading" id="6ao-cP-cG7"/>
+                            <constraint firstItem="ngx-uQ-EnX" firstAttribute="top" secondItem="NRy-2O-kTb" secondAttribute="bottom" id="GwJ-c9-LQU"/>
+                            <constraint firstAttribute="trailing" secondItem="NRy-2O-kTb" secondAttribute="trailing" id="i8N-b2-38S"/>
+                            <constraint firstItem="NRy-2O-kTb" firstAttribute="top" secondItem="Se8-CD-Ppg" secondAttribute="top" id="m0s-2c-e7N"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <connections>
-                        <outlet property="blueButton" destination="n8F-oY-FnU" id="dHV-cb-Zcf"/>
-                        <outlet property="menuButton" destination="4tZ-Ug-beR" id="YgF-R7-aCH"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gYD-cB-vgO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="145" y="477"/>
+            <point key="canvasLocation" x="187" y="477"/>
         </scene>
         <!--Card Game View Controller-->
         <scene sceneID="Z9K-7q-OBJ">
@@ -118,6 +111,14 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="HWW-ot-rjN"/>
                                     <constraint firstAttribute="height" constant="80" id="bTr-Ex-irr"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJB-J5-Oyh" customClass="CardView">
+                                <rect key="frame" x="130" y="108" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="93K-sz-FPT"/>
+                                    <constraint firstAttribute="width" constant="60" id="AcR-Ma-t2O"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sv5-9m-p4W" customClass="CardView">
@@ -249,14 +250,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJB-J5-Oyh" customClass="CardView">
-                                <rect key="frame" x="130" y="108" width="60" height="80"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="93K-sz-FPT"/>
-                                    <constraint firstAttribute="width" constant="60" id="AcR-Ma-t2O"/>
-                                </constraints>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Wq-Gz-d7o">
+                                <rect key="frame" x="274" y="442" width="30" height="30"/>
+                                <state key="normal" title="Exit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Oba-Yw-vAT" kind="unwind" unwindAction="backToMenu:" id="UTl-uO-R3P"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
@@ -329,6 +331,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mfi-2y-J6q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Oba-Yw-vAT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="618" y="477"/>
         </scene>

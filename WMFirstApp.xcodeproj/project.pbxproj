@@ -11,6 +11,7 @@
 		082C315F1A93528800308207 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C315E1A93528800308207 /* CardView.m */; };
 		082C31621A9352D200308207 /* CardObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C31611A9352D200308207 /* CardObject.m */; };
 		082C31651A93630200308207 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C31641A93630200308207 /* Card.m */; };
+		082C316A1A949A2E00308207 /* LuckCardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C31691A949A2E00308207 /* LuckCardGameViewController.m */; };
 		086DF8271A826632007BF2F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 086DF8261A826632007BF2F0 /* main.m */; };
 		086DF82A1A826632007BF2F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 086DF8291A826632007BF2F0 /* AppDelegate.m */; };
 		086DF82D1A826632007BF2F0 /* WMFirstApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 086DF82B1A826632007BF2F0 /* WMFirstApp.xcdatamodeld */; };
@@ -41,6 +42,8 @@
 		082C31611A9352D200308207 /* CardObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardObject.m; sourceTree = "<group>"; };
 		082C31631A93630200308207 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		082C31641A93630200308207 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		082C31681A949A2E00308207 /* LuckCardGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuckCardGameViewController.h; sourceTree = "<group>"; };
+		082C31691A949A2E00308207 /* LuckCardGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuckCardGameViewController.m; sourceTree = "<group>"; };
 		086DF8211A826632007BF2F0 /* WMFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		086DF8251A826632007BF2F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		086DF8261A826632007BF2F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -80,9 +83,9 @@
 		082C314C1A91B75900308207 /* CardGame */ = {
 			isa = PBXGroup;
 			children = (
+				082C31671A9499FA00308207 /* TurnCardGame */,
+				082C31661A9499E800308207 /* LuckCardGame */,
 				082C315C1A93525100308207 /* Card */,
-				082C31591A93523E00308207 /* CardGameViewController.h */,
-				082C315A1A93523E00308207 /* CardGameViewController.m */,
 			);
 			name = CardGame;
 			sourceTree = "<group>";
@@ -98,6 +101,24 @@
 				082C31641A93630200308207 /* Card.m */,
 			);
 			name = Card;
+			sourceTree = "<group>";
+		};
+		082C31661A9499E800308207 /* LuckCardGame */ = {
+			isa = PBXGroup;
+			children = (
+				082C31681A949A2E00308207 /* LuckCardGameViewController.h */,
+				082C31691A949A2E00308207 /* LuckCardGameViewController.m */,
+			);
+			name = LuckCardGame;
+			sourceTree = "<group>";
+		};
+		082C31671A9499FA00308207 /* TurnCardGame */ = {
+			isa = PBXGroup;
+			children = (
+				082C31591A93523E00308207 /* CardGameViewController.h */,
+				082C315A1A93523E00308207 /* CardGameViewController.m */,
+			);
+			name = TurnCardGame;
 			sourceTree = "<group>";
 		};
 		086DF8181A826632007BF2F0 = {
@@ -272,6 +293,7 @@
 				082C315B1A93523E00308207 /* CardGameViewController.m in Sources */,
 				086DF8301A826632007BF2F0 /* ViewController.m in Sources */,
 				086DF82D1A826632007BF2F0 /* WMFirstApp.xcdatamodeld in Sources */,
+				082C316A1A949A2E00308207 /* LuckCardGameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

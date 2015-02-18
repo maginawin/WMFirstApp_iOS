@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yyb-2b-kS1">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -28,10 +29,19 @@
                                             <segue destination="mwX-4h-I4L" kind="presentation" modalTransitionStyle="flipHorizontal" id="oop-16-E2W"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKU-rH-T4c">
+                                        <rect key="frame" x="8" y="66" width="116" height="30"/>
+                                        <state key="normal" title="Luck Card Game">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="cKM-GO-iHA" kind="presentation" modalTransitionStyle="coverVertical" id="qqj-Ab-6mG"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="NRy-2O-kTb" firstAttribute="leading" secondItem="Se8-CD-Ppg" secondAttribute="leading" id="6ao-cP-cG7"/>
                             <constraint firstItem="ngx-uQ-EnX" firstAttribute="top" secondItem="NRy-2O-kTb" secondAttribute="bottom" id="GwJ-c9-LQU"/>
@@ -44,6 +54,227 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gYD-cB-vgO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="187" y="477"/>
+        </scene>
+        <!--Luck Card Game View Controller-->
+        <scene sceneID="EWp-ki-X08">
+            <objects>
+                <viewController id="cKM-GO-iHA" customClass="LuckCardGameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F3g-LL-oQO"/>
+                        <viewControllerLayoutGuide type="bottom" id="xa2-kO-a9X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7QL-GZ-85z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ew3-E9-PPU">
+                                <rect key="frame" x="274" y="442" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kNy-Bp-IvC"/>
+                                    <constraint firstAttribute="width" constant="30" id="wCf-LY-tvP"/>
+                                </constraints>
+                                <state key="normal" title="Exit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="odn-BY-9tK" kind="unwind" unwindAction="backToMenu:" id="ue4-ZY-iiC"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="idb-bz-tyR" customClass="CardView">
+                                <rect key="frame" x="8" y="28" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="4Om-Y7-qya"/>
+                                    <constraint firstAttribute="height" constant="80" id="C9j-Ef-Obd"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STh-sX-EA8" customClass="CardView">
+                                <rect key="frame" x="69" y="28" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="hGF-mp-0gz"/>
+                                    <constraint firstAttribute="height" constant="80" id="ySw-TN-WOX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UW9-ip-lZf" customClass="CardView">
+                                <rect key="frame" x="130" y="28" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="9wz-2g-DSu"/>
+                                    <constraint firstAttribute="width" constant="60" id="kIG-5J-VCy"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xUq-LL-uHm" customClass="CardView">
+                                <rect key="frame" x="191" y="28" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="FLO-oN-dST"/>
+                                    <constraint firstAttribute="height" constant="80" id="SvF-V3-nfx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tWS-Bn-dwz" customClass="CardView">
+                                <rect key="frame" x="252" y="28" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="WP1-6m-bd5"/>
+                                    <constraint firstAttribute="height" constant="80" id="efZ-iK-eET"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTW-CB-0xS" customClass="CardView">
+                                <rect key="frame" x="8" y="116" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Jri-nr-Pz7"/>
+                                    <constraint firstAttribute="width" constant="60" id="ta9-ZN-JiK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wNq-KB-LRW" customClass="CardView">
+                                <rect key="frame" x="69" y="116" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="3sC-iZ-A2D"/>
+                                    <constraint firstAttribute="width" constant="60" id="a45-un-FZP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hiU-Ze-vaT" customClass="CardView">
+                                <rect key="frame" x="130" y="116" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="4ii-WI-qSj"/>
+                                    <constraint firstAttribute="width" constant="60" id="4rm-1h-csk"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6k3-oH-EFD" customClass="CardView">
+                                <rect key="frame" x="191" y="116" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="loi-LH-wF3"/>
+                                    <constraint firstAttribute="width" constant="60" id="mAd-BH-rcw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKD-pb-olu" customClass="CardView">
+                                <rect key="frame" x="252" y="116" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="XfR-me-hCB"/>
+                                    <constraint firstAttribute="height" constant="80" id="bE7-jd-3uL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNX-qb-Yv0" customClass="CardView">
+                                <rect key="frame" x="8" y="204" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="67M-Va-oPH"/>
+                                    <constraint firstAttribute="width" constant="60" id="Iwf-On-N8m"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rzb-G4-hTN" customClass="CardView">
+                                <rect key="frame" x="69" y="204" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="WPj-4v-kDU"/>
+                                    <constraint firstAttribute="height" constant="80" id="YfC-j1-ma1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qlz-U4-JOQ" customClass="CardView">
+                                <rect key="frame" x="130" y="204" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="iSK-77-y93"/>
+                                    <constraint firstAttribute="height" constant="80" id="jpx-Ra-MeB"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KRt-7D-IYb" customClass="CardView">
+                                <rect key="frame" x="191" y="204" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="995-fD-M2e"/>
+                                    <constraint firstAttribute="width" constant="60" id="ehG-ko-X7Y"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zH-3E-hyc" customClass="CardView">
+                                <rect key="frame" x="252" y="204" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="SDt-ms-lwd"/>
+                                    <constraint firstAttribute="height" constant="80" id="pCV-IR-ubX"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g60-FJ-84D">
+                                <rect key="frame" x="16" y="442" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QD3-R1-svt"/>
+                                    <constraint firstAttribute="width" constant="30" id="a6s-c1-rRl"/>
+                                </constraints>
+                                <state key="normal" title="洗牌">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshClick:" destination="cKM-GO-iHA" eventType="touchUpInside" id="MjU-6i-Uzs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wNq-KB-LRW" firstAttribute="top" secondItem="STh-sX-EA8" secondAttribute="bottom" constant="8" id="0jo-y2-XfK"/>
+                            <constraint firstItem="6k3-oH-EFD" firstAttribute="leading" secondItem="hiU-Ze-vaT" secondAttribute="trailing" constant="1" id="2by-Nu-gb7"/>
+                            <constraint firstItem="tWS-Bn-dwz" firstAttribute="leading" secondItem="xUq-LL-uHm" secondAttribute="trailing" constant="1" id="2d0-af-YwA"/>
+                            <constraint firstAttribute="centerX" secondItem="hiU-Ze-vaT" secondAttribute="centerX" id="33x-zu-PRa"/>
+                            <constraint firstItem="xa2-kO-a9X" firstAttribute="top" secondItem="g60-FJ-84D" secondAttribute="bottom" constant="8" id="7Xv-Y4-JDj"/>
+                            <constraint firstItem="6zH-3E-hyc" firstAttribute="leading" secondItem="KRt-7D-IYb" secondAttribute="trailing" constant="1" id="AG8-u7-kbJ"/>
+                            <constraint firstItem="Ew3-E9-PPU" firstAttribute="trailing" secondItem="7QL-GZ-85z" secondAttribute="trailingMargin" id="AQ6-aM-jst"/>
+                            <constraint firstItem="6zH-3E-hyc" firstAttribute="top" secondItem="HKD-pb-olu" secondAttribute="bottom" constant="8" id="BDm-px-vIL"/>
+                            <constraint firstItem="HTW-CB-0xS" firstAttribute="top" secondItem="idb-bz-tyR" secondAttribute="bottom" constant="8" id="G1c-l3-vbW"/>
+                            <constraint firstItem="xNX-qb-Yv0" firstAttribute="top" secondItem="HTW-CB-0xS" secondAttribute="bottom" constant="8" id="GF0-3t-KUG"/>
+                            <constraint firstItem="HKD-pb-olu" firstAttribute="leading" secondItem="6k3-oH-EFD" secondAttribute="trailing" constant="1" id="JGA-mc-nfb"/>
+                            <constraint firstItem="6k3-oH-EFD" firstAttribute="top" secondItem="xUq-LL-uHm" secondAttribute="bottom" constant="8" id="N18-WC-nUS"/>
+                            <constraint firstItem="HKD-pb-olu" firstAttribute="top" secondItem="tWS-Bn-dwz" secondAttribute="bottom" constant="8" id="OBG-eE-HtB"/>
+                            <constraint firstItem="g60-FJ-84D" firstAttribute="leading" secondItem="7QL-GZ-85z" secondAttribute="leadingMargin" id="OuJ-gy-liM"/>
+                            <constraint firstItem="hiU-Ze-vaT" firstAttribute="top" secondItem="UW9-ip-lZf" secondAttribute="bottom" constant="8" id="P5H-K0-xv6"/>
+                            <constraint firstItem="xa2-kO-a9X" firstAttribute="top" secondItem="Ew3-E9-PPU" secondAttribute="bottom" constant="8" id="PiB-gy-iMS"/>
+                            <constraint firstItem="STh-sX-EA8" firstAttribute="top" secondItem="F3g-LL-oQO" secondAttribute="bottom" constant="8" id="Te4-Hk-xvJ"/>
+                            <constraint firstItem="STh-sX-EA8" firstAttribute="leading" secondItem="idb-bz-tyR" secondAttribute="trailing" constant="1" id="U7e-Y4-rMf"/>
+                            <constraint firstAttribute="centerX" secondItem="Qlz-U4-JOQ" secondAttribute="centerX" id="Vk7-Yc-WmT"/>
+                            <constraint firstItem="xUq-LL-uHm" firstAttribute="leading" secondItem="UW9-ip-lZf" secondAttribute="trailing" constant="1" id="YSX-D5-EHi"/>
+                            <constraint firstItem="KRt-7D-IYb" firstAttribute="top" secondItem="6k3-oH-EFD" secondAttribute="bottom" constant="8" id="cVB-oa-h7O"/>
+                            <constraint firstItem="tWS-Bn-dwz" firstAttribute="top" secondItem="F3g-LL-oQO" secondAttribute="bottom" constant="8" id="clk-w3-yiG"/>
+                            <constraint firstItem="hiU-Ze-vaT" firstAttribute="leading" secondItem="wNq-KB-LRW" secondAttribute="trailing" constant="1" id="dBj-MN-ZYL"/>
+                            <constraint firstItem="UW9-ip-lZf" firstAttribute="leading" secondItem="STh-sX-EA8" secondAttribute="trailing" constant="1" id="dJb-xE-epU"/>
+                            <constraint firstItem="rzb-G4-hTN" firstAttribute="leading" secondItem="xNX-qb-Yv0" secondAttribute="trailing" constant="1" id="el1-jr-oKs"/>
+                            <constraint firstItem="Qlz-U4-JOQ" firstAttribute="top" secondItem="hiU-Ze-vaT" secondAttribute="bottom" constant="8" id="g9J-cN-69C"/>
+                            <constraint firstAttribute="centerX" secondItem="UW9-ip-lZf" secondAttribute="centerX" id="h5s-AC-eAw"/>
+                            <constraint firstItem="UW9-ip-lZf" firstAttribute="top" secondItem="F3g-LL-oQO" secondAttribute="bottom" constant="8" id="ie4-aY-zsI"/>
+                            <constraint firstItem="KRt-7D-IYb" firstAttribute="leading" secondItem="Qlz-U4-JOQ" secondAttribute="trailing" constant="1" id="lKW-51-EMb"/>
+                            <constraint firstItem="wNq-KB-LRW" firstAttribute="leading" secondItem="HTW-CB-0xS" secondAttribute="trailing" constant="1" id="qCj-28-omB"/>
+                            <constraint firstItem="idb-bz-tyR" firstAttribute="top" secondItem="F3g-LL-oQO" secondAttribute="bottom" constant="8" id="qD2-8g-BtC"/>
+                            <constraint firstItem="xUq-LL-uHm" firstAttribute="top" secondItem="F3g-LL-oQO" secondAttribute="bottom" constant="8" id="qp8-Mo-EUh"/>
+                            <constraint firstItem="rzb-G4-hTN" firstAttribute="top" secondItem="wNq-KB-LRW" secondAttribute="bottom" constant="8" id="ruL-N2-NF8"/>
+                            <constraint firstItem="Qlz-U4-JOQ" firstAttribute="leading" secondItem="rzb-G4-hTN" secondAttribute="trailing" constant="1" id="vRl-za-eZg"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outletCollection property="cardView" destination="idb-bz-tyR" id="LDB-hm-t7o"/>
+                        <outletCollection property="cardView" destination="STh-sX-EA8" id="Rdn-Kl-hIq"/>
+                        <outletCollection property="cardView" destination="UW9-ip-lZf" id="feA-e0-09W"/>
+                        <outletCollection property="cardView" destination="xUq-LL-uHm" id="agH-4m-x1v"/>
+                        <outletCollection property="cardView" destination="tWS-Bn-dwz" id="Pqk-Rd-gYq"/>
+                        <outletCollection property="cardView" destination="HTW-CB-0xS" id="sqL-NS-u6G"/>
+                        <outletCollection property="cardView" destination="wNq-KB-LRW" id="OmN-En-MTc"/>
+                        <outletCollection property="cardView" destination="hiU-Ze-vaT" id="M4m-Sq-jhI"/>
+                        <outletCollection property="cardView" destination="6k3-oH-EFD" id="RU3-F3-fo8"/>
+                        <outletCollection property="cardView" destination="HKD-pb-olu" id="4Vh-yi-SHU"/>
+                        <outletCollection property="cardView" destination="xNX-qb-Yv0" id="h22-Pf-6Ve"/>
+                        <outletCollection property="cardView" destination="rzb-G4-hTN" id="Hrb-8e-jy9"/>
+                        <outletCollection property="cardView" destination="Qlz-U4-JOQ" id="ORC-iT-qTR"/>
+                        <outletCollection property="cardView" destination="KRt-7D-IYb" id="DXY-GR-kDK"/>
+                        <outletCollection property="cardView" destination="6zH-3E-hyc" id="zs8-yU-8jc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oiW-iW-fmt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="odn-BY-9tK" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="618" y="1109"/>
         </scene>
         <!--Card Game View Controller-->
         <scene sceneID="Z9K-7q-OBJ">

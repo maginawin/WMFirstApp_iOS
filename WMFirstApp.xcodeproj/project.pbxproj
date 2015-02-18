@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		082C314F1A91B78900308207 /* WMCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C314E1A91B78900308207 /* WMCardViewController.m */; };
-		082C31521A91B7B300308207 /* WMCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C31511A91B7B300308207 /* WMCardView.m */; };
-		082C31551A92233B00308207 /* WMCardObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C31541A92233B00308207 /* WMCardObject.m */; };
-		082C31581A92243400308207 /* WMCardArrayObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C31571A92243400308207 /* WMCardArrayObject.m */; };
+		082C315B1A93523E00308207 /* CardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C315A1A93523E00308207 /* CardGameViewController.m */; };
+		082C315F1A93528800308207 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C315E1A93528800308207 /* CardView.m */; };
+		082C31621A9352D200308207 /* CardObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C31611A9352D200308207 /* CardObject.m */; };
+		082C31651A93630200308207 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C31641A93630200308207 /* Card.m */; };
 		086DF8271A826632007BF2F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 086DF8261A826632007BF2F0 /* main.m */; };
 		086DF82A1A826632007BF2F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 086DF8291A826632007BF2F0 /* AppDelegate.m */; };
 		086DF82D1A826632007BF2F0 /* WMFirstApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 086DF82B1A826632007BF2F0 /* WMFirstApp.xcdatamodeld */; };
@@ -33,14 +33,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		082C314D1A91B78900308207 /* WMCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMCardViewController.h; sourceTree = "<group>"; };
-		082C314E1A91B78900308207 /* WMCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMCardViewController.m; sourceTree = "<group>"; };
-		082C31501A91B7B300308207 /* WMCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMCardView.h; sourceTree = "<group>"; };
-		082C31511A91B7B300308207 /* WMCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMCardView.m; sourceTree = "<group>"; };
-		082C31531A92233B00308207 /* WMCardObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMCardObject.h; sourceTree = "<group>"; };
-		082C31541A92233B00308207 /* WMCardObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMCardObject.m; sourceTree = "<group>"; };
-		082C31561A92243400308207 /* WMCardArrayObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMCardArrayObject.h; sourceTree = "<group>"; };
-		082C31571A92243400308207 /* WMCardArrayObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMCardArrayObject.m; sourceTree = "<group>"; };
+		082C31591A93523E00308207 /* CardGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardGameViewController.h; sourceTree = "<group>"; };
+		082C315A1A93523E00308207 /* CardGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardGameViewController.m; sourceTree = "<group>"; };
+		082C315D1A93528800308207 /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
+		082C315E1A93528800308207 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
+		082C31601A9352D200308207 /* CardObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardObject.h; sourceTree = "<group>"; };
+		082C31611A9352D200308207 /* CardObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardObject.m; sourceTree = "<group>"; };
+		082C31631A93630200308207 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		082C31641A93630200308207 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		086DF8211A826632007BF2F0 /* WMFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		086DF8251A826632007BF2F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		086DF8261A826632007BF2F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -80,16 +80,24 @@
 		082C314C1A91B75900308207 /* CardGame */ = {
 			isa = PBXGroup;
 			children = (
-				082C314D1A91B78900308207 /* WMCardViewController.h */,
-				082C314E1A91B78900308207 /* WMCardViewController.m */,
-				082C31501A91B7B300308207 /* WMCardView.h */,
-				082C31511A91B7B300308207 /* WMCardView.m */,
-				082C31531A92233B00308207 /* WMCardObject.h */,
-				082C31541A92233B00308207 /* WMCardObject.m */,
-				082C31561A92243400308207 /* WMCardArrayObject.h */,
-				082C31571A92243400308207 /* WMCardArrayObject.m */,
+				082C315C1A93525100308207 /* Card */,
+				082C31591A93523E00308207 /* CardGameViewController.h */,
+				082C315A1A93523E00308207 /* CardGameViewController.m */,
 			);
 			name = CardGame;
+			sourceTree = "<group>";
+		};
+		082C315C1A93525100308207 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				082C315D1A93528800308207 /* CardView.h */,
+				082C315E1A93528800308207 /* CardView.m */,
+				082C31601A9352D200308207 /* CardObject.h */,
+				082C31611A9352D200308207 /* CardObject.m */,
+				082C31631A93630200308207 /* Card.h */,
+				082C31641A93630200308207 /* Card.m */,
+			);
+			name = Card;
 			sourceTree = "<group>";
 		};
 		086DF8181A826632007BF2F0 = {
@@ -256,13 +264,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				082C315F1A93528800308207 /* CardView.m in Sources */,
+				082C31621A9352D200308207 /* CardObject.m in Sources */,
 				086DF82A1A826632007BF2F0 /* AppDelegate.m in Sources */,
+				082C31651A93630200308207 /* Card.m in Sources */,
 				086DF8271A826632007BF2F0 /* main.m in Sources */,
-				082C31581A92243400308207 /* WMCardArrayObject.m in Sources */,
-				082C31551A92233B00308207 /* WMCardObject.m in Sources */,
-				082C314F1A91B78900308207 /* WMCardViewController.m in Sources */,
+				082C315B1A93523E00308207 /* CardGameViewController.m in Sources */,
 				086DF8301A826632007BF2F0 /* ViewController.m in Sources */,
-				082C31521A91B7B300308207 /* WMCardView.m in Sources */,
 				086DF82D1A826632007BF2F0 /* WMFirstApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

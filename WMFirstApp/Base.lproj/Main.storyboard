@@ -52,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="145" y="477"/>
         </scene>
-        <!--Card View Controller-->
+        <!--Card Game View Controller-->
         <scene sceneID="Z9K-7q-OBJ">
             <objects>
-                <viewController id="mwX-4h-I4L" customClass="WMCardViewController" sceneMemberID="viewController">
+                <viewController id="mwX-4h-I4L" customClass="CardGameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DUr-7V-eRR"/>
                         <viewControllerLayoutGuide type="bottom" id="vgc-wD-Kp1"/>
@@ -64,57 +64,268 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYG-LR-M1m" customClass="WMCardView">
-                                <rect key="frame" x="28" y="20" width="60" height="80"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYG-LR-M1m" customClass="CardView">
+                                <rect key="frame" x="8" y="20" width="60" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="5pE-vM-S3y"/>
-                                    <constraint firstAttribute="height" constant="80" id="Asd-EI-Ms7"/>
+                                    <constraint firstAttribute="width" constant="60" id="8zV-kD-kP0"/>
+                                    <constraint firstAttribute="height" constant="80" id="oze-X5-FMa"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fbz-G3-Rnl" customClass="WMCardView">
-                                <rect key="frame" x="96" y="20" width="60" height="80"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fbz-G3-Rnl" customClass="CardView">
+                                <rect key="frame" x="69" y="20" width="60" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="QyH-Bb-yBo"/>
-                                    <constraint firstAttribute="height" constant="80" id="tHY-2O-ess"/>
+                                    <constraint firstAttribute="width" constant="60" id="QBO-Sr-WxZ"/>
+                                    <constraint firstAttribute="height" constant="80" id="jdg-1f-Dlg"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcZ-PQ-JCc" customClass="WMCardView">
-                                <rect key="frame" x="164" y="20" width="60" height="80"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcZ-PQ-JCc" customClass="CardView">
+                                <rect key="frame" x="130" y="20" width="60" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="w2P-9A-8Hh"/>
-                                    <constraint firstAttribute="height" constant="80" id="xXr-8o-EpA"/>
+                                    <constraint firstAttribute="height" constant="80" id="FUM-Xl-3sM"/>
+                                    <constraint firstAttribute="width" constant="60" id="hXp-0U-mhb"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SpD-qo-KAV" customClass="WMCardView">
-                                <rect key="frame" x="232" y="20" width="60" height="80"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SpD-qo-KAV" customClass="CardView">
+                                <rect key="frame" x="191" y="20" width="60" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="Tzo-H2-GVr"/>
-                                    <constraint firstAttribute="width" constant="60" id="YZy-6u-9sG"/>
+                                    <constraint firstAttribute="width" constant="60" id="4Q8-Vl-k8c"/>
+                                    <constraint firstAttribute="height" constant="80" id="KwZ-Hy-0aW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S3l-kZ-TGS" customClass="CardView">
+                                <rect key="frame" x="252" y="20" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="DUe-Ny-qeX"/>
+                                    <constraint firstAttribute="width" constant="60" id="qwd-Uw-VU5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I3i-mv-gzh" customClass="CardView">
+                                <rect key="frame" x="8" y="108" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="387-Iv-Tvi"/>
+                                    <constraint firstAttribute="width" constant="60" id="gI8-vz-UZD"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="im9-Xr-Yqp" customClass="CardView">
+                                <rect key="frame" x="69" y="108" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="HWW-ot-rjN"/>
+                                    <constraint firstAttribute="height" constant="80" id="bTr-Ex-irr"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sv5-9m-p4W" customClass="CardView">
+                                <rect key="frame" x="191" y="108" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Kbl-Vr-A7O"/>
+                                    <constraint firstAttribute="width" constant="60" id="yUg-to-EJt"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="juX-xj-TKc" customClass="CardView">
+                                <rect key="frame" x="252" y="108" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="cv5-qt-QWB"/>
+                                    <constraint firstAttribute="width" constant="60" id="s2Z-2o-VOP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2eT-FW-Vlf" customClass="CardView">
+                                <rect key="frame" x="8" y="196" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Nbn-Tz-muP"/>
+                                    <constraint firstAttribute="height" constant="80" id="RCN-bQ-IPE"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RcO-tU-nFK" customClass="CardView">
+                                <rect key="frame" x="69" y="196" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="2bn-RS-tOb"/>
+                                    <constraint firstAttribute="height" constant="80" id="MgY-CF-UDG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAS-AI-8un" customClass="CardView">
+                                <rect key="frame" x="130" y="196" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="QQ2-B4-yws"/>
+                                    <constraint firstAttribute="width" constant="60" id="cyV-Ky-k0t"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Owf-qt-J8e" customClass="CardView">
+                                <rect key="frame" x="191" y="196" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="AiO-ej-5SM"/>
+                                    <constraint firstAttribute="width" constant="60" id="jh0-FW-3zC"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OUc-8p-CdA" customClass="CardView">
+                                <rect key="frame" x="252" y="196" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Hzk-Na-Uoe"/>
+                                    <constraint firstAttribute="height" constant="80" id="WMZ-kd-Mo0"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gfb-cR-BcE" customClass="CardView">
+                                <rect key="frame" x="8" y="284" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="1Dz-pZ-04N"/>
+                                    <constraint firstAttribute="height" constant="80" id="t2D-gz-FYe"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dse-mW-TVi" customClass="CardView">
+                                <rect key="frame" x="69" y="284" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="pED-4G-Nre"/>
+                                    <constraint firstAttribute="height" constant="80" id="vVa-tb-nbp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjp-oz-rRg" customClass="CardView">
+                                <rect key="frame" x="130" y="284" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="4zp-8m-j28"/>
+                                    <constraint firstAttribute="height" constant="80" id="xfE-Ha-aub"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVJ-Y8-QVK" customClass="CardView">
+                                <rect key="frame" x="191" y="284" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="WhZ-Wk-mm6"/>
+                                    <constraint firstAttribute="height" constant="80" id="fc0-Ia-6RA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n3d-nz-vis" customClass="CardView">
+                                <rect key="frame" x="252" y="284" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="gam-Dj-glw"/>
+                                    <constraint firstAttribute="height" constant="80" id="lx5-RO-051"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4R-Dj-FjW">
+                                <rect key="frame" x="16" y="401" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRz-41-epj">
+                                <rect key="frame" x="77" y="401" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlK-PM-a8d">
+                                <rect key="frame" x="16" y="430" width="90" height="30"/>
+                                <state key="normal" title="Refresh Card">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshCardClick:" destination="mwX-4h-I4L" eventType="touchUpInside" id="0zc-kp-6Qt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="History:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="780-Dr-Qia">
+                                <rect key="frame" x="145" y="401" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHc-gl-Rrw">
+                                <rect key="frame" x="213" y="401" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJB-J5-Oyh" customClass="CardView">
+                                <rect key="frame" x="130" y="108" width="60" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="93K-sz-FPT"/>
+                                    <constraint firstAttribute="width" constant="60" id="AcR-Ma-t2O"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Fbz-G3-Rnl" firstAttribute="top" secondItem="DUr-7V-eRR" secondAttribute="bottom" id="OwA-we-jSp"/>
-                            <constraint firstAttribute="centerX" secondItem="SpD-qo-KAV" secondAttribute="centerX" constant="-102" id="Rx2-bo-AeZ"/>
-                            <constraint firstItem="mcZ-PQ-JCc" firstAttribute="top" secondItem="DUr-7V-eRR" secondAttribute="bottom" id="S5A-OA-EKw"/>
-                            <constraint firstAttribute="centerX" secondItem="Fbz-G3-Rnl" secondAttribute="centerX" constant="34" id="S5S-1Y-jRX"/>
-                            <constraint firstItem="eYG-LR-M1m" firstAttribute="top" secondItem="DUr-7V-eRR" secondAttribute="bottom" id="ZoO-K3-IOf"/>
-                            <constraint firstAttribute="centerX" secondItem="mcZ-PQ-JCc" secondAttribute="centerX" constant="-34" id="plq-VA-zrR"/>
-                            <constraint firstAttribute="centerX" secondItem="eYG-LR-M1m" secondAttribute="centerX" constant="102" id="uq1-7g-K4U"/>
-                            <constraint firstItem="SpD-qo-KAV" firstAttribute="top" secondItem="DUr-7V-eRR" secondAttribute="bottom" id="x0g-9c-5Bm"/>
+                            <constraint firstItem="n3d-nz-vis" firstAttribute="leading" secondItem="AVJ-Y8-QVK" secondAttribute="trailing" constant="1" id="0cR-w0-wEq"/>
+                            <constraint firstItem="IAS-AI-8un" firstAttribute="top" secondItem="RJB-J5-Oyh" secondAttribute="bottom" constant="8" id="3bR-oK-Ffi"/>
+                            <constraint firstItem="sv5-9m-p4W" firstAttribute="top" secondItem="SpD-qo-KAV" secondAttribute="bottom" constant="8" id="7c3-tX-rFb"/>
+                            <constraint firstItem="Fbz-G3-Rnl" firstAttribute="top" secondItem="DUr-7V-eRR" secondAttribute="bottom" id="DHa-UO-KGL"/>
+                            <constraint firstItem="OUc-8p-CdA" firstAttribute="leading" secondItem="Owf-qt-J8e" secondAttribute="trailing" constant="1" id="HAi-kg-9bG"/>
+                            <constraint firstItem="AVJ-Y8-QVK" firstAttribute="leading" secondItem="jjp-oz-rRg" secondAttribute="trailing" constant="1" id="HwT-bg-hIA"/>
+                            <constraint firstItem="juX-xj-TKc" firstAttribute="top" secondItem="S3l-kZ-TGS" secondAttribute="bottom" constant="8" id="LvP-QS-ED2"/>
+                            <constraint firstItem="RcO-tU-nFK" firstAttribute="leading" secondItem="2eT-FW-Vlf" secondAttribute="trailing" constant="1" id="NO2-DZ-0Ci"/>
+                            <constraint firstItem="IAS-AI-8un" firstAttribute="leading" secondItem="RcO-tU-nFK" secondAttribute="trailing" constant="1" id="NVW-KW-QOA"/>
+                            <constraint firstAttribute="centerX" secondItem="mcZ-PQ-JCc" secondAttribute="centerX" id="QJW-Vd-iN1"/>
+                            <constraint firstItem="SpD-qo-KAV" firstAttribute="leading" secondItem="mcZ-PQ-JCc" secondAttribute="trailing" constant="1" id="Ryy-0C-sp7"/>
+                            <constraint firstItem="dse-mW-TVi" firstAttribute="top" secondItem="RcO-tU-nFK" secondAttribute="bottom" constant="8" id="S6l-tm-uUQ"/>
+                            <constraint firstItem="mcZ-PQ-JCc" firstAttribute="leading" secondItem="Fbz-G3-Rnl" secondAttribute="trailing" constant="1" id="SbN-P8-fhk"/>
+                            <constraint firstItem="im9-Xr-Yqp" firstAttribute="leading" secondItem="I3i-mv-gzh" secondAttribute="trailing" constant="1" id="W2S-Fo-dY1"/>
+                            <constraint firstItem="RcO-tU-nFK" firstAttribute="top" secondItem="im9-Xr-Yqp" secondAttribute="bottom" constant="8" id="WXV-LX-VOA"/>
+                            <constraint firstItem="AVJ-Y8-QVK" firstAttribute="top" secondItem="Owf-qt-J8e" secondAttribute="bottom" constant="8" id="X9u-ep-3Mt"/>
+                            <constraint firstItem="eYG-LR-M1m" firstAttribute="top" secondItem="DUr-7V-eRR" secondAttribute="bottom" id="Y69-OA-sfX"/>
+                            <constraint firstItem="SpD-qo-KAV" firstAttribute="top" secondItem="DUr-7V-eRR" secondAttribute="bottom" id="aWX-gP-9lu"/>
+                            <constraint firstItem="S3l-kZ-TGS" firstAttribute="top" secondItem="DUr-7V-eRR" secondAttribute="bottom" id="apz-RT-lKK"/>
+                            <constraint firstItem="gfb-cR-BcE" firstAttribute="top" secondItem="2eT-FW-Vlf" secondAttribute="bottom" constant="8" id="bAP-6F-NMa"/>
+                            <constraint firstItem="jjp-oz-rRg" firstAttribute="leading" secondItem="dse-mW-TVi" secondAttribute="trailing" constant="1" id="bSb-kI-8G3"/>
+                            <constraint firstItem="Fbz-G3-Rnl" firstAttribute="leading" secondItem="eYG-LR-M1m" secondAttribute="trailing" constant="1" id="d3V-6o-h9z"/>
+                            <constraint firstItem="mcZ-PQ-JCc" firstAttribute="top" secondItem="DUr-7V-eRR" secondAttribute="bottom" id="dUw-0u-WDW"/>
+                            <constraint firstItem="RJB-J5-Oyh" firstAttribute="leading" secondItem="im9-Xr-Yqp" secondAttribute="trailing" constant="1" id="fZB-xQ-JYd"/>
+                            <constraint firstAttribute="centerX" secondItem="jjp-oz-rRg" secondAttribute="centerX" id="g52-bp-5iV"/>
+                            <constraint firstItem="n3d-nz-vis" firstAttribute="top" secondItem="OUc-8p-CdA" secondAttribute="bottom" constant="8" id="hvC-Su-fsj"/>
+                            <constraint firstItem="I3i-mv-gzh" firstAttribute="top" secondItem="eYG-LR-M1m" secondAttribute="bottom" constant="8" id="j0i-Vq-pDW"/>
+                            <constraint firstItem="2eT-FW-Vlf" firstAttribute="top" secondItem="I3i-mv-gzh" secondAttribute="bottom" constant="8" id="jnE-xw-m7n"/>
+                            <constraint firstItem="S3l-kZ-TGS" firstAttribute="leading" secondItem="SpD-qo-KAV" secondAttribute="trailing" constant="1" id="keB-5Y-DIl"/>
+                            <constraint firstItem="jjp-oz-rRg" firstAttribute="top" secondItem="IAS-AI-8un" secondAttribute="bottom" constant="8" id="lJU-0R-u3R"/>
+                            <constraint firstItem="Owf-qt-J8e" firstAttribute="leading" secondItem="IAS-AI-8un" secondAttribute="trailing" constant="1" id="li6-b4-1dP"/>
+                            <constraint firstAttribute="centerX" secondItem="RJB-J5-Oyh" secondAttribute="centerX" id="nHP-w8-6ns"/>
+                            <constraint firstItem="OUc-8p-CdA" firstAttribute="top" secondItem="juX-xj-TKc" secondAttribute="bottom" constant="8" id="qfP-nM-APA"/>
+                            <constraint firstItem="Owf-qt-J8e" firstAttribute="top" secondItem="sv5-9m-p4W" secondAttribute="bottom" constant="8" id="smH-SQ-kbZ"/>
+                            <constraint firstItem="im9-Xr-Yqp" firstAttribute="top" secondItem="Fbz-G3-Rnl" secondAttribute="bottom" constant="8" id="urg-On-y1D"/>
+                            <constraint firstItem="RJB-J5-Oyh" firstAttribute="top" secondItem="mcZ-PQ-JCc" secondAttribute="bottom" constant="8" id="v0X-NE-7DF"/>
+                            <constraint firstItem="juX-xj-TKc" firstAttribute="leading" secondItem="sv5-9m-p4W" secondAttribute="trailing" constant="1" id="vHv-Yx-WBv"/>
+                            <constraint firstItem="sv5-9m-p4W" firstAttribute="leading" secondItem="RJB-J5-Oyh" secondAttribute="trailing" constant="1" id="vj6-Ru-lCM"/>
+                            <constraint firstItem="dse-mW-TVi" firstAttribute="leading" secondItem="gfb-cR-BcE" secondAttribute="trailing" constant="1" id="yl8-jO-n4o"/>
+                            <constraint firstAttribute="centerX" secondItem="IAS-AI-8un" secondAttribute="centerX" id="z5T-TC-GXK"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="cardView" destination="eYG-LR-M1m" id="zB2-OS-G1y"/>
-                        <outlet property="cardView1" destination="Fbz-G3-Rnl" id="K0D-gC-gCT"/>
-                        <outlet property="cardView2" destination="mcZ-PQ-JCc" id="aTc-rY-xU8"/>
-                        <outlet property="cardView3" destination="SpD-qo-KAV" id="MYP-re-7e8"/>
+                        <outlet property="cardView0" destination="eYG-LR-M1m" id="XE3-aY-29R"/>
+                        <outlet property="cardView1" destination="Fbz-G3-Rnl" id="s3a-ru-7s8"/>
+                        <outlet property="cardView10" destination="2eT-FW-Vlf" id="vet-yK-qdg"/>
+                        <outlet property="cardView11" destination="RcO-tU-nFK" id="O0F-bb-cOd"/>
+                        <outlet property="cardView12" destination="IAS-AI-8un" id="oBW-cS-MQX"/>
+                        <outlet property="cardView13" destination="Owf-qt-J8e" id="QWC-Pi-cM5"/>
+                        <outlet property="cardView14" destination="OUc-8p-CdA" id="MEb-gB-HxS"/>
+                        <outlet property="cardView15" destination="gfb-cR-BcE" id="S6m-mL-AFi"/>
+                        <outlet property="cardView16" destination="dse-mW-TVi" id="wIf-sH-sBK"/>
+                        <outlet property="cardView17" destination="jjp-oz-rRg" id="OMG-1T-Mh1"/>
+                        <outlet property="cardView18" destination="AVJ-Y8-QVK" id="q8x-He-NSO"/>
+                        <outlet property="cardView19" destination="n3d-nz-vis" id="h0a-Or-dhc"/>
+                        <outlet property="cardView2" destination="mcZ-PQ-JCc" id="zoo-vr-Kvg"/>
+                        <outlet property="cardView3" destination="SpD-qo-KAV" id="zD5-nR-4dm"/>
+                        <outlet property="cardView4" destination="S3l-kZ-TGS" id="bET-4A-yf0"/>
+                        <outlet property="cardView5" destination="I3i-mv-gzh" id="7Xo-gV-R57"/>
+                        <outlet property="cardView6" destination="im9-Xr-Yqp" id="AK9-G7-gjQ"/>
+                        <outlet property="cardView7" destination="RJB-J5-Oyh" id="UcL-7b-zWt"/>
+                        <outlet property="cardView8" destination="sv5-9m-p4W" id="iGB-oU-fUm"/>
+                        <outlet property="cardView9" destination="juX-xj-TKc" id="m14-wJ-61Z"/>
+                        <outlet property="historyScoreLabel" destination="KHc-gl-Rrw" id="aNe-PG-DC3"/>
+                        <outlet property="scoreLabel" destination="JRz-41-epj" id="Hc5-Tu-yXe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mfi-2y-J6q" userLabel="First Responder" sceneMemberID="firstResponder"/>

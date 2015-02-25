@@ -38,6 +38,15 @@
                                             <segue destination="cKM-GO-iHA" kind="presentation" modalTransitionStyle="coverVertical" id="qqj-Ab-6mG"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dr5-wQ-1RX">
+                                        <rect key="frame" x="8" y="104" width="108" height="30"/>
+                                        <state key="normal" title="Left Slide Menu">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="jrb-HZ-XJY" kind="presentation" id="lEL-gF-Ql0"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -54,6 +63,131 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gYD-cB-vgO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="187" y="477"/>
+        </scene>
+        <!--Content02 View Controller-->
+        <scene sceneID="hWE-T0-INe">
+            <objects>
+                <viewController storyboardIdentifier="idContent02VC" id="BQv-Cy-vrn" customClass="Content02ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SCK-Kk-A8n"/>
+                        <viewControllerLayoutGuide type="bottom" id="dS2-k1-w61"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ncb-Bp-7Cb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Content 02" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpW-2V-nDH">
+                                <rect key="frame" x="117" y="229" width="86" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9I-qT-UnW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-985" y="1109"/>
+        </scene>
+        <!--Content01 View Controller-->
+        <scene sceneID="4gi-z4-Hok">
+            <objects>
+                <viewController storyboardIdentifier="idContent01VC" id="9ro-hG-3lO" customClass="Content01ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5BO-bk-hhb"/>
+                        <viewControllerLayoutGuide type="bottom" id="b2j-KS-Kcc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lx2-Hg-6Nj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Content 01" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUo-Ah-aJm">
+                                <rect key="frame" x="117" y="229" width="86" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KTm-r5-a0O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-622" y="1109"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="mcA-Lr-chE">
+            <objects>
+                <viewController storyboardIdentifier="idMenuVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eM6-2Y-2YL" customClass="MenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5WT-rW-kQu"/>
+                        <viewControllerLayoutGuide type="bottom" id="iJH-mi-DIH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pDb-ze-3eC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6C-hX-7Cj">
+                                <rect key="frame" x="16" y="20" width="56" height="30"/>
+                                <state key="normal" title="Mneu01">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="menu01Click:" destination="eM6-2Y-2YL" eventType="touchUpInside" id="O0P-hU-i8D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQd-X6-Za5">
+                                <rect key="frame" x="16" y="96" width="56" height="30"/>
+                                <state key="normal" title="Menu03">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="menu03Click:" destination="eM6-2Y-2YL" eventType="touchUpInside" id="bG0-Tl-Qnb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLb-ZD-4fl">
+                                <rect key="frame" x="16" y="58" width="56" height="30"/>
+                                <state key="normal" title="Menu02">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="menu02Click:" destination="eM6-2Y-2YL" eventType="touchUpInside" id="umw-eD-6cD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g6C-hX-7Cj" firstAttribute="top" secondItem="5WT-rW-kQu" secondAttribute="bottom" id="b3g-2n-BHB"/>
+                            <constraint firstItem="g6C-hX-7Cj" firstAttribute="leading" secondItem="pDb-ze-3eC" secondAttribute="leadingMargin" id="fFN-qQ-xTw"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8m-HF-uMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-233" y="1109"/>
+        </scene>
+        <!--Left Slide Menu View Controller-->
+        <scene sceneID="86e-ER-nlc">
+            <objects>
+                <viewController id="jrb-HZ-XJY" customClass="LeftSlideMenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="32n-bK-cA8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pwb-Td-Tx6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vZr-vV-ToZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kxx-GO-YEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="1109"/>
         </scene>
         <!--Luck Card Game View Controller-->
         <scene sceneID="EWp-ki-X08">

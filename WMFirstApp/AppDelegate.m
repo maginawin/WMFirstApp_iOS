@@ -16,7 +16,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    // 调戏断点
+    NSInteger theNumber = 1;
+    theNumber++;
+    theNumber = 46;
+    
     return YES;
 }
 

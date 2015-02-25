@@ -12,6 +12,10 @@
 		082C31621A9352D200308207 /* CardObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C31611A9352D200308207 /* CardObject.m */; };
 		082C31651A93630200308207 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C31641A93630200308207 /* Card.m */; };
 		082C316A1A949A2E00308207 /* LuckCardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C31691A949A2E00308207 /* LuckCardGameViewController.m */; };
+		082C316E1A986B3600308207 /* LeftSlideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C316D1A986B3600308207 /* LeftSlideMenuViewController.m */; };
+		082C31711A9CDEA500308207 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C31701A9CDEA500308207 /* MenuViewController.m */; };
+		082C31741A9CE84300308207 /* Content01ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C31731A9CE84300308207 /* Content01ViewController.m */; };
+		082C31781A9CE88C00308207 /* Content02ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 082C31771A9CE88C00308207 /* Content02ViewController.m */; };
 		086DF8271A826632007BF2F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 086DF8261A826632007BF2F0 /* main.m */; };
 		086DF82A1A826632007BF2F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 086DF8291A826632007BF2F0 /* AppDelegate.m */; };
 		086DF82D1A826632007BF2F0 /* WMFirstApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 086DF82B1A826632007BF2F0 /* WMFirstApp.xcdatamodeld */; };
@@ -44,6 +48,14 @@
 		082C31641A93630200308207 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		082C31681A949A2E00308207 /* LuckCardGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuckCardGameViewController.h; sourceTree = "<group>"; };
 		082C31691A949A2E00308207 /* LuckCardGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuckCardGameViewController.m; sourceTree = "<group>"; };
+		082C316C1A986B3600308207 /* LeftSlideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSlideMenuViewController.h; sourceTree = "<group>"; };
+		082C316D1A986B3600308207 /* LeftSlideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSlideMenuViewController.m; sourceTree = "<group>"; };
+		082C316F1A9CDEA500308207 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		082C31701A9CDEA500308207 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		082C31721A9CE84300308207 /* Content01ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Content01ViewController.h; sourceTree = "<group>"; };
+		082C31731A9CE84300308207 /* Content01ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Content01ViewController.m; sourceTree = "<group>"; };
+		082C31761A9CE88C00308207 /* Content02ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Content02ViewController.h; sourceTree = "<group>"; };
+		082C31771A9CE88C00308207 /* Content02ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Content02ViewController.m; sourceTree = "<group>"; };
 		086DF8211A826632007BF2F0 /* WMFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		086DF8251A826632007BF2F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		086DF8261A826632007BF2F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -121,6 +133,29 @@
 			name = TurnCardGame;
 			sourceTree = "<group>";
 		};
+		082C316B1A986B2100308207 /* LeftSlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				082C31751A9CE86500308207 /* Content */,
+				082C316C1A986B3600308207 /* LeftSlideMenuViewController.h */,
+				082C316D1A986B3600308207 /* LeftSlideMenuViewController.m */,
+				082C316F1A9CDEA500308207 /* MenuViewController.h */,
+				082C31701A9CDEA500308207 /* MenuViewController.m */,
+			);
+			name = LeftSlideMenu;
+			sourceTree = "<group>";
+		};
+		082C31751A9CE86500308207 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				082C31721A9CE84300308207 /* Content01ViewController.h */,
+				082C31731A9CE84300308207 /* Content01ViewController.m */,
+				082C31761A9CE88C00308207 /* Content02ViewController.h */,
+				082C31771A9CE88C00308207 /* Content02ViewController.m */,
+			);
+			name = Content;
+			sourceTree = "<group>";
+		};
 		086DF8181A826632007BF2F0 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +177,7 @@
 		086DF8231A826632007BF2F0 /* WMFirstApp */ = {
 			isa = PBXGroup;
 			children = (
+				082C316B1A986B2100308207 /* LeftSlideMenu */,
 				082C314C1A91B75900308207 /* CardGame */,
 				086DF8281A826632007BF2F0 /* AppDelegate.h */,
 				086DF8291A826632007BF2F0 /* AppDelegate.m */,
@@ -286,13 +322,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				082C315F1A93528800308207 /* CardView.m in Sources */,
+				082C31781A9CE88C00308207 /* Content02ViewController.m in Sources */,
 				082C31621A9352D200308207 /* CardObject.m in Sources */,
 				086DF82A1A826632007BF2F0 /* AppDelegate.m in Sources */,
 				082C31651A93630200308207 /* Card.m in Sources */,
 				086DF8271A826632007BF2F0 /* main.m in Sources */,
 				082C315B1A93523E00308207 /* CardGameViewController.m in Sources */,
 				086DF8301A826632007BF2F0 /* ViewController.m in Sources */,
+				082C31741A9CE84300308207 /* Content01ViewController.m in Sources */,
 				086DF82D1A826632007BF2F0 /* WMFirstApp.xcdatamodeld in Sources */,
+				082C316E1A986B3600308207 /* LeftSlideMenuViewController.m in Sources */,
+				082C31711A9CDEA500308207 /* MenuViewController.m in Sources */,
 				082C316A1A949A2E00308207 /* LuckCardGameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

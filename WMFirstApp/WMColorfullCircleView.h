@@ -10,4 +10,6 @@
 
 @interface WMColorfullCircleView : UIView
 
+@property (nonatomic, setter=updateCurrentProgress:) CGFloat currentProgress;
+
 @end

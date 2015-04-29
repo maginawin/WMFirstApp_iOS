@@ -7,8 +7,11 @@
 //
 
 #import "Content01ViewController.h"
+#import "WMColorfullCircleView.h"
+#import "math.h"
 
 @interface Content01ViewController ()
+@property (weak, nonatomic) IBOutlet WMColorfullCircleView *mProgress;
 
 @end
 
@@ -17,6 +20,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (IBAction)randomCurrentProgress:(id)sender {
+    float randomCurrent = (double)arc4random() / 0x100000000;
+    NSLog(@"current %.2f",randomCurrent);
+    [_mProgress updateCurrentProgress:randomCurrent];
 }
 
 - (void)didReceiveMemoryWarning {

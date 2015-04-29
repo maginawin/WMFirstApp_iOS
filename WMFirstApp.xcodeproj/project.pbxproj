@@ -25,6 +25,7 @@
 		086DF8381A826632007BF2F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086DF8361A826632007BF2F0 /* LaunchScreen.xib */; };
 		086DF8441A826632007BF2F0 /* WMFirstAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 086DF8431A826632007BF2F0 /* WMFirstAppTests.m */; };
 		086DF84F1A82669E007BF2F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 086DF8511A82669E007BF2F0 /* Localizable.strings */; };
+		08B25D711AF10BBF0012A749 /* WMColorfullCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B25D701AF10BBF0012A749 /* WMColorfullCircleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		086DF8431A826632007BF2F0 /* WMFirstAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMFirstAppTests.m; sourceTree = "<group>"; };
 		086DF8501A82669E007BF2F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		086DF8521A8266BD007BF2F0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		08B25D6F1AF10BBF0012A749 /* WMColorfullCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMColorfullCircleView.h; sourceTree = "<group>"; };
+		08B25D701AF10BBF0012A749 /* WMColorfullCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMColorfullCircleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,7 @@
 		082C316B1A986B2100308207 /* LeftSlideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				08B25D6E1AF10B980012A749 /* WM View */,
 				082C31751A9CE86500308207 /* Content */,
 				082C316C1A986B3600308207 /* LeftSlideMenuViewController.h */,
 				082C316D1A986B3600308207 /* LeftSlideMenuViewController.m */,
@@ -217,6 +221,15 @@
 				086DF8421A826632007BF2F0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08B25D6E1AF10B980012A749 /* WM View */ = {
+			isa = PBXGroup;
+			children = (
+				08B25D6F1AF10BBF0012A749 /* WMColorfullCircleView.h */,
+				08B25D701AF10BBF0012A749 /* WMColorfullCircleView.m */,
+			);
+			name = "WM View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +339,7 @@
 				082C31621A9352D200308207 /* CardObject.m in Sources */,
 				086DF82A1A826632007BF2F0 /* AppDelegate.m in Sources */,
 				082C31651A93630200308207 /* Card.m in Sources */,
+				08B25D711AF10BBF0012A749 /* WMColorfullCircleView.m in Sources */,
 				086DF8271A826632007BF2F0 /* main.m in Sources */,
 				082C315B1A93523E00308207 /* CardGameViewController.m in Sources */,
 				086DF8301A826632007BF2F0 /* ViewController.m in Sources */,

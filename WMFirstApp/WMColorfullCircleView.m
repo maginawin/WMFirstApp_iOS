@@ -38,7 +38,6 @@
 }
 
 - (void)setupInit {
-    self.backgroundColor = [UIColor lightGrayColor];
     CGFloat radius = (self.frame.size.width / 2) - CIRCLE_LINE_WIDTH;
     UIBezierPath* path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.bounds.size.width / 2, self.bounds.size.height /2) radius:radius startAngle:DEGREES_TO_RADIANS(-90) endAngle:DEGREES_TO_RADIANS(270) clockwise:YES];
     _progressLayer = [CAShapeLayer layer];
@@ -66,8 +65,7 @@
     [gradientLayer addSublayer:gradient1];
     
     [gradientLayer setMask:_progressLayer];
-    [self.layer addSublayer:gradientLayer];
-//    [self.layer addSublayer:_progressLayer];
+    [self.layer addSublayer:gradientLayer];    
 }
 
 - (NSArray*)colorsForRight {
